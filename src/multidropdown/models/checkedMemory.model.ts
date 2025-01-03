@@ -24,7 +24,7 @@ class CheckedMemoryModel {
             if (this.#defaultMemory[child.id] === "some" || this.#defaultMemory[child.id] === "all") childrenCountSome = true;
         })
         if (childrenCountSome) status = "some";
-        if (childrenCountAll || this.#defaultMemory[id] === "all") status = "all";
+        if (childrenCountAll || (this.#defaultMemory[id] === "all" && children.length === 0)) status = "all";
         return status;
     }
 
