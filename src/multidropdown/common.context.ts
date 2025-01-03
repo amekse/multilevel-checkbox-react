@@ -1,7 +1,7 @@
 import { createContext } from "react";
-import { CheckMemoryState, UpdateMemoryFunction } from "./common.types";
+import { CheckMemoryState, CheckObject } from "./common.types";
 
-const OnChangeContext = createContext<UpdateMemoryFunction>((id:number, label: string, checked: boolean) => {});
+const OnChangeContext = createContext((id:number, label: string, checked: "all" | false, children:CheckObject[]) => {});
 
 const MemoryContext = createContext<CheckMemoryState>({})
 

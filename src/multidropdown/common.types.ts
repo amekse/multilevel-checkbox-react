@@ -45,7 +45,7 @@ type CustomCheckBoxProp = {
     checkObject: CheckObject
 }
 
-type UpdateMemoryFunction = (id:number, label: string, checked: CustomCheckStatus) => void
+type UpdateMemoryFunction = (id:number, label: string, checked: CustomCheckStatus, children: CheckObject[]) => void
 
 export type {
     MultiLevelDropdownProps,

@@ -1,8 +1,8 @@
 import React from "react";
 import { CustomCheckStatus } from "./common.types";
+import "./checkbox.style.css";
 
-function CheckBox({checked, onChange}:{checked:CustomCheckStatus, onChange: (checked:CustomCheckStatus) => void}) {
-
+function CheckBox({checked, onChange, internalId}:{checked:CustomCheckStatus, onChange: (checked:"all"|false) => void, internalId: number}) {
     const handleClick = () => {
         if (checked) {
             onChange(false);
@@ -12,12 +12,12 @@ function CheckBox({checked, onChange}:{checked:CustomCheckStatus, onChange: (che
     }
 
     return (
-        <div style={{ width: '30px', height: '30px', cursor: 'pointer' }} onClick={handleClick}>
+        <div className="checkbox" onClick={handleClick} key={`checkbox-div-${internalId}`}>
             {
-                checked === "some" && <span>&#10003;</span>
+                checked === "some" && <span key={`checkbox-div-some${internalId}`}>&#10092;</span>
             }
             {
-                checked === "all" && <span>&#10092;</span>
+                checked === "all" && <span key={`checkbox-div-all${internalId}`}>&#10003;</span>
             }
         </div>
     )

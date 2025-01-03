@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { MultiLevelDropdownProps, UserCheckedObject } from "./common.types";
+import checkedMemoryModel from "./models/checkedMemory.model";
 
 const LazyParentList = lazy(() => import("./parentList.component"));
 
