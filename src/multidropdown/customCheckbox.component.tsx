@@ -6,7 +6,7 @@ function CustomCheckbox(props:CustomCheckBoxProp) {
     const { checkObject } = props;
     const handleCheckChange = useContext(OnChangeContext);
     const memoryCheckStatus = (useContext(MemoryContext))[checkObject.id];
-
+    
     return (
         <div key={`container-div-${checkObject.id}`}>
             <div style={{ display: "flex", flexDirection: "column"}}>

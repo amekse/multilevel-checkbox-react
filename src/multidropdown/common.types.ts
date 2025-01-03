@@ -52,5 +52,6 @@ export type {
     ParentListProp,
     CheckMemoryState,
     CustomCheckBoxProp,
-    UpdateMemoryFunction
+    UpdateMemoryFunction,
+    CheckBoxMarking
 }

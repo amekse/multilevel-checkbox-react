@@ -1,5 +1,6 @@
 .App {
   width: 50%;
+  margin: 8px;
 
   display: flex;
   flex-direction: column;
@@ -8,4 +9,5 @@
 .output {
   display: flex;
   flex-direction: column;
+  margin: 8px;
 }
