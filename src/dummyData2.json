@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "label": "Menu 1",
+      "children": [
+        {
+          "id": 2,
+          "label": "Submenu 1-1",
+          "children": [
+            {
+              "id": 6,
+              "label": "Submenu 1-1-2",
+              "children": [
+                {
+                  "id": 7,
+                  "label": "Submenu 1-1-2-1",
+                  "children": []
+                },
+                {
+                  "id": 8,
+                  "label": "Submenu 1-1-2-2",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "label": "Submenu 1-1-1",
+              "children": [
+                {
+                  "id": 4,
+                  "label": "Submenu 1-1-1-1",
+                  "children": []
+                },
+                {
+                  "id": 5,
+                  "label": "Submenu 1-1-1-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Submenu 1-2",
+          "children": [
+            {
+              "id": 10,
+              "label": "Submenu 1-2-1",
+              "children": [
+                {
+                  "id": 11,
+                  "label": "Submenu 1-2-1-1",
+                  "children": []
+                },
+                {
+                  "id": 12,
+                  "label": "Submenu 1-2-1-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "Menu 2",
+      "children": [
+        {
+          "id": 14,
+          "label": "Submenu 2-1",
+          "children": [
+            {
+              "id": 15,
+              "label": "Submenu 2-1-1",
+              "children": [
+                {
+                  "id": 16,
+                  "label": "Submenu 2-1-1-1",
+                  "children": []
+                },
+                {
+                  "id": 17,
+                  "label": "Submenu 2-1-1-2",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 18,
+              "label": "Submenu 2-1-2",
+              "children": [
+                {
+                  "id": 19,
+                  "label": "Submenu 2-1-2-1",
+                  "children": []
+                },
+                {
+                  "id": 20,
+                  "label": "Submenu 2-1-2-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "label": "Submenu 2-2",
+          "children": [
+            {
+              "id": 22,
+              "label": "Submenu 2-2-1",
+              "children": [
+                {
+                  "id": 23,
+                  "label": "Submenu 2-2-1-1",
+                  "children": []
+                },
+                {
+                  "id": 24,
+                  "label": "Submenu 2-2-1-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+]
+  

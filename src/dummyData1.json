@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "label": "Menu 1",
+      "children": [
+        {
+          "id": 2,
+          "label": "Submenu 1-1",
+          "children": [
+            {
+              "id": 3,
+              "label": "Submenu 1-1-1",
+              "children": [
+                {
+                  "id": 4,
+                  "label": "Submenu 1-1-1-1",
+                  "children": []
+                },
+                {
+                  "id": 5,
+                  "label": "Submenu 1-1-1-2",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "label": "Submenu 1-1-2",
+              "children": [
+                {
+                  "id": 7,
+                  "label": "Submenu 1-1-2-1",
+                  "children": []
+                },
+                {
+                  "id": 8,
+                  "label": "Submenu 1-1-2-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Submenu 1-2",
+          "children": [
+            {
+              "id": 10,
+              "label": "Submenu 1-2-1",
+              "children": [
+                {
+                  "id": 11,
+                  "label": "Submenu 1-2-1-1",
+                  "children": []
+                },
+                {
+                  "id": 12,
+                  "label": "Submenu 1-2-1-2",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+]
+  
