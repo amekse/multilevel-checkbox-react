@@ -9,6 +9,8 @@ type UserCheckedObject = {
     label: string
 }
 
+type CustomCheckStatus = "all" | "some" | false;
+
 /**
  * Represents the prop type defination for the standalone multi-level dropdown component
  */
@@ -36,14 +38,14 @@ type ParentListProp = {
 }
 
 type CheckMemoryState = {
-    [key:number]: boolean | undefined
+    [key:number]: CustomCheckStatus | undefined
 }
 
 type CustomCheckBoxProp = {
     checkObject: CheckObject
 }
 
-type UpdateMemoryFunction = (id:number, label: string, checked: boolean) => void
+type UpdateMemoryFunction = (id:number, label: string, checked: CustomCheckStatus) => void
 
 export type {
     MultiLevelDropdownProps,
@@ -52,5 +54,6 @@ export type {
     ParentListProp,
     CheckMemoryState,
     CustomCheckBoxProp,
-    UpdateMemoryFunction
+    UpdateMemoryFunction,
+    CustomCheckStatus
 }

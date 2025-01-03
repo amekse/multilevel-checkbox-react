@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { CheckMemoryState, ParentListProp } from "./common.types";
 import { MemoryContext, OnChangeContext } from "./common.context";
 import checkedMemoryModel from "./models/checkedMemory.model";

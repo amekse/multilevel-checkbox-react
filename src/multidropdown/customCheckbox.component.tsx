@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CustomCheckBoxProp } from "./common.types";
 import { MemoryContext, OnChangeContext } from "./common.context";
+import CheckBox from "./checkbox.component";
 
 function CustomCheckbox(props:CustomCheckBoxProp) {
     const { checkObject } = props;
@@ -11,7 +12,8 @@ function CustomCheckbox(props:CustomCheckBoxProp) {
         <div key={`container-div-${checkObject.id}`}>
             <div style={{ display: "flex", flexDirection: "column"}}>
                 <label>
-                    <input type="checkbox" checked={memoryCheckStatus || false} key={`input-check-${checkObject.id}`} onChange={e => handleCheckChange(checkObject.id, checkObject.label, e.target.checked)}/>{checkObject.id} {checkObject.label}
+                    <CheckBox checked={memoryCheckStatus || false} onChange={checked => handleCheckChange(checkObject.id, checkObject.label, checked)} />
+                    {checkObject.id} {checkObject.label}
                 </label>
                 <div style={{ marginLeft: '8px' }}>
                     {
