@@ -8,14 +8,14 @@ function CustomCheckbox(props:CustomCheckBoxProp) {
     const memoryCheckStatus = (useContext(MemoryContext))[checkObject.id];
 
     return (
-        <div>
+        <div key={`container-div-${checkObject.id}`}>
             <div style={{ display: "flex", flexDirection: "column"}}>
                 <label>
-                <input type="checkbox" checked={memoryCheckStatus} key={checkObject.id} onChange={e => handleCheckChange(checkObject.id, checkObject.label, e.target.checked)}/> {checkObject.label}
+                    <input type="checkbox" checked={memoryCheckStatus || false} key={`input-check-${checkObject.id}`} onChange={e => handleCheckChange(checkObject.id, checkObject.label, e.target.checked)}/>{checkObject.id} {checkObject.label}
                 </label>
                 <div style={{ marginLeft: '8px' }}>
                     {
-                        checkObject.children.map(child => <CustomCheckbox checkObject={child} />)
+                        checkObject.children.map(child => <CustomCheckbox key={child.id} checkObject={child} />)
                     }
                 </div>
             </div>

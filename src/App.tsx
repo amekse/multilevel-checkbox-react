@@ -15,7 +15,7 @@ function App() {
       <div className='output'>
         {
           output.map((item:any) => 
-            <span>
+            <span key={item.id}>
               {JSON.stringify(item)}
             </span>
           )
